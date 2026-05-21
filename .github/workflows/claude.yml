@@ -8,6 +8,13 @@ on:
   pull_request:
     types: [opened, synchronize]
 
+# เพิ่มบล็อกนี้เพื่อขอสิทธิ์ระบบ GitHub ยืนยันตัวตนและพิมพ์ตอบกลับ
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  id-token: write
+
 jobs:
   claude-agent:
     if: |
